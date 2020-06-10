@@ -1,8 +1,8 @@
 package race;
 
 public class Player {
-	String name;
-	int record;
+	private String name;
+	private int record;
 	
 	public void setName(String name) {
 		this.name = name;
@@ -17,5 +17,8 @@ public class Player {
 	}
 	public int getRecord() {
 		return this.record;
+	}
+	public void showRecord() {
+		System.out.println("선수: " + name + ", 기록: " + record + "초");
 	}
 }
