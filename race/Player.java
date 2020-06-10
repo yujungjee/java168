@@ -19,6 +19,6 @@ public class Player {
 		return this.record;
 	}
 	public void showRecord() {
-		System.out.println("º±ºˆ: " + name + ", ±‚∑œ: " + record + "√ ");
+		System.out.println("Ïù¥Î¶Ñ: " + name + ", Í∏∞Î°ù: " + record + "Í∏∞Î°ù");
 	}
 }
