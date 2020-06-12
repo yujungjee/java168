@@ -54,12 +54,12 @@ public class RpsApp {
 		} else if(player == 3 && com == 2) {result = "승리";
 		} else {result = "무승부";}
 		
-		String rpsP = rps(player);
-		String rpsC = rps(com);
+		// String rpsP = rps(player);
+		// String rpsC = rps(com);
 			
 		System.out.println("*****************************");
-		System.out.println("플레이어: " + rpsP);
-		System.out.println("컴퓨터: " + rpsC);
+		// System.out.println("플레이어: " + rpsP);
+		// System.out.println("컴퓨터: " + rpsC);
 		System.out.println("플레이어: " + result);
 	}
 
@@ -67,7 +67,7 @@ public class RpsApp {
 	 * @param com
 	 * @return
 	 */
-	private static String rps(int com) {
+	private static String rpsC(int com) {
 		String rpsC = "";
 		
 		switch(com) {
@@ -82,7 +82,7 @@ public class RpsApp {
 	 * @param player
 	 * @return
 	 */
-	private static String rps(int player) {
+	private static String rpsP(int player) {
 		String rpsP = "";
 		
 		switch(player) {

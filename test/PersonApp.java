@@ -9,12 +9,12 @@ public class PersonApp {
 		
 		for(int i = 0; i < 3; i++) {
 			Person person = new Person();
-			System.out.println("ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+			System.out.println("ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.");
 			person.setName(scanner.next());
-			System.out.println("³ªÀÌ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
-			person.age = scanner.nextInt();
-			System.out.println("Å°¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä. ");
-			person.height = scanner.nextFloat();
+			System.out.println("ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.");
+			// person.age = scanner.nextInt();
+			System.out.println("Å°ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½. ");
+			// person.height = scanner.nextFloat();
 			persons[i] = person;
 		}
 		for(int i = 0; i < 3; i++) {
