@@ -2,40 +2,48 @@ package member;
 
 public class MemberServiceImpl implements MemberService{
 	private Member[] members;
-	private int idx = 0; 
+	private int count;
 	
 	public MemberServiceImpl() {
 		members = new Member[3];
-		idx = 0;
+		count = 0;
 	}
 	
 
 	@Override
 	public void join(Member member) {
-		System.out.println("App에서 넘어온 회원정보");
-		System.out.println(member.toString());
-		members[idx] = member;
-		idx++;
-		System.out.println("* 증가된 인덱스값: " +idx);
-		System.out.println("** 배열에 저장된 회원정보");
-		for(int i = 0; i < members.length; i++) {
-			if(members[i] != null) {
-			System.out.println(members[i].toString());
-		} else {
-		System.out.println("회원정보가 없어요.");
-		}
+		members[count] = member;
+		count = 0;
 	}
-	}
+	
 	@Override
-	public void login() {
-		// TODO Auto-generated method stub
+	public String login(Member member) {
+		String result = "FAIL";
+		for(int i = 0; i<count; i++) {
+			if(member.getUserid().equals(members[i].getUserid())
+				&&
+				member.getPassword().equals(members[i].getPassword())) {
+				result = "SUCCESS";
+					break;
+			}
+		}
+		return result;
 		
 	}
-
 
 	@Override
 	public Member[] list() {
 		return members;
 	}
-
+	
+	@Override
+	public String existId(Member member) {
+		String result = "중복없음";
+		for(int i = 0; i < count; i++) {
+		if(member.getUserid().equals(members[i].getUserid())) {
+		result = "중복된 아이디";
+		}
+	}
+		return result;
+	}
 }
