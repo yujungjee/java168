@@ -5,6 +5,7 @@ public interface MemberService {
 	public String login(Member member);
 	public Member[] list();
 	public String existId(Member member);
+	public Member[] mypage();
 }
 
 

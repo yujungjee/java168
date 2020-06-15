@@ -17,7 +17,6 @@ public class Matrix5 {
 				System.out.printf(mtx[i][j] + "\t");
 			num++;
 			}
-			System.out.println();
 		}
 	}
 }

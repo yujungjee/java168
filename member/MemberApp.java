@@ -26,7 +26,7 @@ public class MemberApp {
 		
 		while(true) {
 			System.out.println("메뉴: 0.종료 1.회원가입 2.로그인"
-					+ " 5.중복 아이디 7.회원목록");
+					+ " 5.중복 아이디 6. 마이페이지 7.회원목록");
 			switch (scan.nextInt()) {
 			case 0:
 				System.err.println("종료");
@@ -66,6 +66,15 @@ public class MemberApp {
 				member.setUserid(scan.next());
 				result = memberService.existId(member);
 				System.out.println(result);
+				break;
+			case 6:
+				System.out.println("마이페이지");
+				member = new Member();
+				System.out.println("아이디: ");
+				Member[] mypage = memberService.mypage();
+				for(int i = 0; i<3; i++) {
+					System.out.println(mypage[i].toString());
+				}
 				break;
 				
 			default:

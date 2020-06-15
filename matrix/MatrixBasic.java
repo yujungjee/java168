@@ -9,10 +9,9 @@ public class MatrixBasic {
 			System.out.println("");
 			for(int j = 0; j < mtx[i].length; j++) {
 				mtx[i][j] = num;
-				System.out.printf(mtx[i][j]*5 + "\t");
+				System.out.printf(mtx[i][j] + "\t");
 			num++;
 			}
-			System.out.println();
 		}
 	}
 }
