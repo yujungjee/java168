@@ -2,6 +2,8 @@ package sepuence;
 
 //ace 를 출력 하시오. while
 public class Names {
+	public static void main(String[] args) {
+		
 	String[] names = {"a","b","c","d","e"};
 	
 	String ace = "";
@@ -17,6 +19,7 @@ public class Names {
 		}
 		}
 		System.out.println(ace);
+	}
 	}
 }
 

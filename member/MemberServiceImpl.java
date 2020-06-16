@@ -50,6 +50,9 @@ public class MemberServiceImpl implements MemberService{
 
 	@Override
 	public Member[] mypage() {
-		return login;
+		// TODO Auto-generated method stub
+		return null;
 	}
+
+	
 }
