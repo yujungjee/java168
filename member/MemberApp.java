@@ -23,7 +23,7 @@ public class MemberApp {
 		Scanner scan = new Scanner(System.in);
 		Member member = null;
 		MemberService memberService = new MemberServiceImpl();
-		
+
 		while(true) {
 			System.out.println("메뉴: 0.종료 1.회원가입 2.로그인"
 					+ " 5.중복 아이디 6. 마이페이지 7.회원목록");
@@ -76,7 +76,7 @@ public class MemberApp {
 					System.out.println(mypage[i].toString());
 				}
 				break;
-				
+
 			default:
 				System.out.println("메뉴에 없는 기능입니다.");
 				break;
