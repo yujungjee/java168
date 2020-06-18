@@ -60,9 +60,12 @@ public class MemberServiceImpl implements MemberService{
 	public String idfind(Member member) {
 		return null;
 	}
-	// 8. 이름 검색
+	// 8. 이름 검색 (동명이인 처리필요)
 	@Override
 	public String namefind(Member member) {
+		int cnt = 0; //동명이인의 수
+		
+		Member[] temp = new Member[cnt];
 		return null;
 	}
 	// 9. 전체 회원수
