@@ -63,7 +63,6 @@ public class MemberApp {
 				System.out.println("중복 아이디 체크");
 				member = new Member();
 				System.out.println("아이디: ");
-				member.setUserid(scan.next());
 				result = memberService.existId(member);
 				System.out.println(result);
 				break;
